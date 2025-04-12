@@ -343,17 +343,33 @@ return [
         [
             'text' => 'Materias',
             'url' => 'admin/materias',
-            'icon' => 'fas fa-fw fa-layer-book',
+            'icon' => 'fas fa-fw fa-book',
             'classes' => 'bg-blue text-white',
         ],
 
-        [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
+        
        
-        ['header' => 'labels'],
+        ['header' => 'Datos'],
+
+        [
+            'text' => 'Roles',
+            'icon' => 'fas fa-fw fa-user-check',
+            'classes' => 'bg-blue text-white',
+            'submenu' => [
+                [
+                    'text' => 'Listado de roles',
+                    'url' => 'admin/roles',
+                    'classes' => 'bg-white text-black',
+                ],
+            ],
+        ],
+
+        [
+            'text' => 'Administrativos',
+            'url' => 'admin/administrativos',
+            'icon' => 'fas fa-fw fa-users-cog',
+            'classes' => 'bg-blue text-white',
+        ],
 
        
     ],
